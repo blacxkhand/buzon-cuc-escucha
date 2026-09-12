@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7f8;
+    background-color: #4dc1e7;
     color: #333;
 }
 
@@ -15,7 +15,7 @@ body {
 
 header {
     background-color: #168aad;
-    color: white;
+    color: rgb(128, 8, 8);
     text-align: center;
     padding: 30px;
 }
