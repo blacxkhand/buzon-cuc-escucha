@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Odontológica</title>
+    <title>Buzón de Mensajes - buzon de la cuc</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,15 +12,16 @@
 <body>
 
     <header>
-        <h1>Clínica la Gran Sonrisa</h1>
-        <p>Agenda tu cita odontológica</p>
+        <h1>buzon de la cuc</h1>
+        <p>Buzón de Sugerencias, PQRS y Contacto</p>
     </header>
 
     <main>
 
         <section class="contenedor">
 
-            <h2>Solicitud para apartar una cita</h2>
+            <h2>Escríbenos tu mensaje</h2>
+            <p class="descripcion-buzón">Tu opinión es muy importante para nosotros. Cuéntanos tus sugerencias, felicitaciones o reclamos.</p>
 
             <form>
 
@@ -35,7 +36,17 @@
                 </div>
 
                 <div class="grupo">
-                    <label for="telefono">Teléfono</label>
+                    <label for="correo">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="correo" 
+                        name="correo"
+                        placeholder="tu.correo@ejemplo.com"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Teléfono de contacto</label>
                     <input 
                         type="tel" 
                         id="telefono" 
@@ -45,62 +56,28 @@
                 </div>
 
                 <div class="grupo">
-                    <label for="EPS">nombre de la eps</label>
-                    <input 
-                        type="EPS" 
-                        id="EPS" 
-                        name="EPS"
-                        placeholder="EPS"
-                        required>
-                </div>
-
-                <div class="grupo">
-                    <label for="servicio">Tipo de consulta</label>
-
-                    <select id="servicio" name="servicio" required>
+                    <label for="tipo_mensaje">Tipo de comunicación</label>
+                    <select id="tipo_mensaje" name="tipo_mensaje" required>
                         <option value="">Seleccione una opción</option>
-                        <option value="valoracion">Valoración general</option>
-                        <option value="limpieza">Limpieza dental</option>
-                        <option value="ortodoncia">Ortodoncia</option>
-                        <option value="blanqueamiento">Blanqueamiento</option>
-                        <option value="urgencia">Urgencia odontológica</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="felicitacion">Felicitación</option>
+                        <option value="queja">Queja o Reclamo</option>
+                        <option value="duda">Pregunta o Inquietud</option>
                     </select>
                 </div>
 
-                <div class="fila">
-
-                    <div class="grupo">
-                        <label for="fecha">Fecha</label>
-                        <input 
-                            type="date" 
-                            id="fecha" 
-                            name="fecha"
-                            required>
-                    </div>
-
-                    <div class="grupo">
-                        <label for="hora">Hora</label>
-                        <input 
-                            type="time" 
-                            id="hora" 
-                            name="hora"
-                            required>
-                    </div>
-
-                </div>
-
                 <div class="grupo">
-                    <label for="mensaje">Observaciones</label>
-
+                    <label for="mensaje">Mensaje</label>
                     <textarea 
                         id="mensaje" 
                         name="mensaje"
-                        rows="4"
-                        placeholder="Escribe alguna información adicional...">
+                        rows="5"
+                        placeholder="Escribe detalladamente tu mensaje, comentario o inquietud..."
+                        required>
                     </textarea>
                 </div>
 
-                <button type="submit">Agendar cita</button>
+                <button type="submit">Enviar mensaje</button>
 
             </form>
 
@@ -109,7 +86,7 @@
     </main>
 
     <footer>
-        <p>Clínica Dental Sonrisa | Agenda de citas</p>
+        <p>Clínica Dental Sonrisa | Buzón de Atención al Paciente</p>
     </footer>
 
 </body>
