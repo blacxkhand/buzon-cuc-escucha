@@ -1,17 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
 
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    <title>503 Backend.max_conn reached</title>
-  </head>
-  <body>
-    <h1>Error 503 Backend.max_conn reached</h1>
-    <p>Backend.max_conn reached</p>
-    <h3>Error 54113</h3>
-    <p>Details: cache-bog-skbo2340024-BOG 1789174406 1269122405</p>
-    <hr>
-    <p>Varnish cache server</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Odontológica</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Clínica la Gran Sonrisa</h1>
+        <p>Agenda tu cita odontológica</p>
+    </header>
+
+    <main>
+
+        <section class="contenedor">
+
+            <h2>Solicitud para apartar una cita</h2>
+
+            <form>
+
+                <div class="grupo">
+                    <label for="nombre">Nombre completo</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre"
+                        placeholder="Ej. Laura Gómez"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="telefono">Teléfono</label>
+                    <input 
+                        type="tel" 
+                        id="telefono" 
+                        name="telefono"
+                        placeholder="300 123 4567"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="EPS">nombre de la eps</label>
+                    <input 
+                        type="EPS" 
+                        id="EPS" 
+                        name="EPS"
+                        placeholder="EPS"
+                        required>
+                </div>
+
+                <div class="grupo">
+                    <label for="servicio">Tipo de consulta</label>
+
+                    <select id="servicio" name="servicio" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="valoracion">Valoración general</option>
+                        <option value="limpieza">Limpieza dental</option>
+                        <option value="ortodoncia">Ortodoncia</option>
+                        <option value="blanqueamiento">Blanqueamiento</option>
+                        <option value="urgencia">Urgencia odontológica</option>
+                    </select>
+                </div>
+
+                <div class="fila">
+
+                    <div class="grupo">
+                        <label for="fecha">Fecha</label>
+                        <input 
+                            type="date" 
+                            id="fecha" 
+                            name="fecha"
+                            required>
+                    </div>
+
+                    <div class="grupo">
+                        <label for="hora">Hora</label>
+                        <input 
+                            type="time" 
+                            id="hora" 
+                            name="hora"
+                            required>
+                    </div>
+
+                </div>
+
+                <div class="grupo">
+                    <label for="mensaje">Observaciones</label>
+
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje"
+                        rows="4"
+                        placeholder="Escribe alguna información adicional...">
+                    </textarea>
+                </div>
+
+                <button type="submit">Agendar cita</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Clínica Dental Sonrisa | Agenda de citas</p>
+    </footer>
+
+</body>
+
 </html>
